@@ -1,3 +1,6 @@
+
+// If there are duplicates of an element, classical binary search returns a random one.
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
