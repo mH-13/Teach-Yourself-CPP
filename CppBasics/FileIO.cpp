@@ -2,41 +2,37 @@
 
 #include <iostream>
 #include <fstream>
+using namespace std;
 
 int main() {
-    // Create and open a text file
-    std::ofstream outfile("example.txt");
-
-    // Write to the file
+    ofstream outfile("example.txt");
     if (outfile.is_open()) {
-        outfile << "This is a line.\n";
-        outfile << "This is another line.\n";
-        outfile.close(); // Close the file
+        outfile << "Hello, World!\n";
+        outfile << "This is a file handling example.\n";
+        outfile.close();
     } else {
-        std::cout << "Unable to open file";
+        cout << "Unable to open file for writing." << endl;
     }
 
     return 0;
 }
 
+
 //Reading
 #include <iostream>
 #include <fstream>
-#include <string>
+using namespace std;
 
 int main() {
-    std::string line;
-    // Open a text file
-    std::ifstream infile("example.txt");
-
-    // Read and print lines from the file
+    ifstream infile("example.txt");
+    string line;
     if (infile.is_open()) {
         while (getline(infile, line)) {
-            std::cout << line << std::endl;
+            cout << line << endl;
         }
-        infile.close(); // Close the file
+        infile.close();
     } else {
-        std::cout << "Unable to open file";
+        cout << "Unable to open file for reading." << endl;
     }
 
     return 0;

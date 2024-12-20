@@ -14,3 +14,21 @@ int main() {
 
     return 0;
 }
+
+
+/*
+#include <iostream>
+using namespace std;
+
+template <typename T>
+T add(T a, T b) {
+    return a + b;
+}
+
+int main() {
+    cout << "Integer addition: " << add<int>(5, 10) << endl;
+    cout << "Double addition: " << add<double>(5.5, 10.3) << endl;
+
+    return 0;
+}
+*/

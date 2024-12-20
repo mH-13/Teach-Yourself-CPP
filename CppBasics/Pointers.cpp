@@ -14,3 +14,36 @@ int main() {
 
     return 0;
 }
+
+//Dynamic memory allocation
+//Manipulating memory
+
+
+//Shared pointers
+
+#include <iostream>
+#include <memory>
+using namespace std;
+
+int main() {
+    shared_ptr<int> sp1 = make_shared<int>(10);
+    shared_ptr<int> sp2 = sp1;
+
+    cout << "Shared Value: " << *sp1 << endl;
+    cout << "Reference Count: " << sp1.use_count() << endl;
+
+    return 0;
+}
+
+
+//Unique Pointers
+#include <iostream>
+#include <memory>
+using namespace std;
+
+int main() {
+    unique_ptr<int> up = make_unique<int>(20);
+    cout << "Unique Value: " << *up << endl;
+
+    return 0;
+}

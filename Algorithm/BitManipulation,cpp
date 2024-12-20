@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x = 5; // Binary: 0101
+    int y = 3; // Binary: 0011
+
+    cout << "AND: " << (x & y) << endl;  // 0001
+    cout << "OR: " << (x | y) << endl;   // 0111
+    cout << "XOR: " << (x ^ y) << endl;  // 0110
+    cout << "Left Shift: " << (x << 1) << endl;  // 1010
+    cout << "Right Shift: " << (x >> 1) << endl; // 0010
+
+    return 0;
+}
+//Solving low-level optimization problems
+//Efficient calculations in constraints-heavy scenarios

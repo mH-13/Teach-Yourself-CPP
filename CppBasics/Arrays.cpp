@@ -1,13 +1,17 @@
 #include <iostream>
+using namespace std;
 
 int main() {
-    // Declare and initialize an array
-    int numbers[] = {10, 20, 30, 40, 50};
+    int arr[5] = {1, 2, 3, 4, 5};
 
-    // Access elements of the array
+    // Accessing elements
     for (int i = 0; i < 5; i++) {
-        std::cout << "Element at index " << i << ": " << numbers[i] << std::endl;
+        cout << "Element " << i << ": " << arr[i] << endl;
     }
+
+    // Modify elements
+    arr[2] = 10;
+    cout << "Modified Element 2: " << arr[2] << endl;
 
     return 0;
 }
