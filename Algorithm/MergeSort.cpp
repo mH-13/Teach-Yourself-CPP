@@ -53,3 +53,6 @@ int main() {
 
     return 0;
 }
+
+//Stable sorting for large datasets.
+//Efficient divide-and-conquer approach with O(n log n) complexity.
